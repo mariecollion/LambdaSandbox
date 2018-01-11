@@ -4,4 +4,6 @@ package kata.java8map;
 
 public class ToUpperCaseSpec {
 
+    private String blabla;
+
 }
