@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class ToUpperCaseTest {
 
@@ -29,10 +28,7 @@ public class ToUpperCaseTest {
 
 
     public List<String> transform(List<String> collection) {
-        if (collection == null) throw new IllegalArgumentException("empty list");
-        collection = collection.stream().map(String::toUpperCase).peek(System.out::println).collect(Collectors.toList());
-
-        return collection;
+        return collection.stream().map(String::toUpperCase).peek(System.out::println).collect(Collectors.toList());
     }
 
 }

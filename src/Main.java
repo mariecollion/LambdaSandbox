@@ -84,7 +84,7 @@ public class Main {
 
 
 
-        // Streamn
+        // Stream
         Stream<Double> db = Stream.generate(Math::random);
         Stream<String> ss = Stream.generate(() -> "test");
         Stream<Integer> si = Stream.generate(() -> 1);
