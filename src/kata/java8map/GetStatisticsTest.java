@@ -44,7 +44,7 @@ public class GetStatisticsTest {
     public void getStatsShouldReturnMaxAge() {
         assertThat(getStats(persons).getMax()).isEqualTo(1000);
     }
-git s
+
     @Test
     public void getStatsShouldReturnMinAge() {
         assertThat(getStats(persons).getMin()).isEqualTo(32);
